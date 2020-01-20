@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">bkath</string>
+    <string name="item">Page %d</string>
+    <string name="title_activity_view_pager_demo">ViewPagerDemo</string>
+</resources>
