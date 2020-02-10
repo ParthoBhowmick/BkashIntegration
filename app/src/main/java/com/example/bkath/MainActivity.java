@@ -36,6 +36,7 @@ public class MainActivity extends Activity {
     private WebView mWebView;
     private ProgressBar progressBar;
     private String request = "";
+    private Button dagger;
 
     AlertDialog dialogBuilder;
 
@@ -46,6 +47,18 @@ public class MainActivity extends Activity {
 
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+
+        dagger = findViewById(R.id.dagger);
+
+        //dagger.setOnClickListener(view -> {Intent intent = new Intent(this,DaggerTuts.class); startActivity(intent);});
+
+        dagger.setOnClickListener(new OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(MainActivity.this,DaggerTuts.class);
+                startActivity(intent);
+            }
+        });
 
         amount = (EditText) findViewById(R.id.checkout_amount);
 
@@ -136,7 +149,7 @@ public class MainActivity extends Activity {
             return super.onJsAlert(view, url, message, result);
         }
 
-        //        @Override
+//        @Override
 //        public boolean shouldOverrideUrlLoading(WebView view, String url) {
 //            if (url.equals("https://www.bkash.com/terms-and-conditions")) {
 //                Intent myIntent = new Intent(Intent.ACTION_VIEW, Uri.parse(url));

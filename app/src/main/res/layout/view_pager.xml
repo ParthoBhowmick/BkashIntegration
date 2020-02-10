@@ -10,6 +10,7 @@
         android:layout_height="100dp"
         app:autoScroll="true"
         app:isInfinite="true"
+        android:background="#D3D3D3"
         app:scrollInterval="3000"
         app:viewpagerAspectRatio="2.2" />
 

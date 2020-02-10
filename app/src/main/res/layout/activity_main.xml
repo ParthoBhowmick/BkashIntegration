@@ -62,5 +62,16 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/buttonUrlCheckout" />
 
+    <Button
+        android:id="@+id/dagger"
+        android:layout_width="162dp"
+        android:layout_height="72dp"
+        android:layout_marginTop="44dp"
+        android:text="Dagger2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/pager" />
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>

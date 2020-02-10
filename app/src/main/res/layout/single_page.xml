@@ -5,16 +5,23 @@
     android:padding="15dp"
     android:orientation="vertical">
 
-    <!--<TextView-->
-        <!--android:id="@+id/text"-->
-        <!--android:layout_width="wrap_content"-->
-        <!--android:layout_height="50dp"-->
-        <!--android:textAppearance="?android:attr/textAppearanceLarge"/>-->
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:id="@+id/wholeLayout"
+        android:layout_height="match_parent"
+        android:background="@drawable/grey_rectangle_full_with_radius">
 
-    <ImageView
-        android:id="@+id/sample_img"
-        android:src="@color/colorPrimaryDark"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content" />
+        <ImageView
+            android:id="@+id/sample_img"
+            android:paddingLeft="8dp"
+            android:paddingRight="8dp"
+            android:layout_gravity="center"
+            android:src="@color/colorPrimaryDark"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+    </FrameLayout>
+
+
 
 </LinearLayout>
